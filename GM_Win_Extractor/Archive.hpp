@@ -24,6 +24,7 @@ public:
 	bool Load(const std::string& path);
 	bool Dump(const std::string& baseOut);
 private:
-	void _DumpChunk_Regular(const std::string& dirOut, Chunk* pChunk);
+	void _DumpChunk_Raw(const std::string& dirOut, Chunk* pChunk);
 	void _DumpChunk_TXTR(const std::string& dirOut, Chunk* pChunk);
+	void _DumpChunk_AUDO(const std::string& dirOut, Chunk* pChunk);
 };
